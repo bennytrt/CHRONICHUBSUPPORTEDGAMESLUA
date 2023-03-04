@@ -125,11 +125,11 @@ local function NQZCN_fake_script() -- Frame.GUIdrag
 	
 end
 coroutine.wrap(NQZCN_fake_script)()
-local function KLTLVK_fake_script() -- TextButton.LocalScript 
+local function KLTLVK_fake_script()
 	local script = Instance.new('LocalScript', TextButton)
 
-	local button = script.Parent -- assuming the LocalScript is parented to the TextButton or its parent Frame object
-	local gui = button.Parent.Parent -- assuming the TextButton is inside a Frame that is a direct child of the ScreenGui
+	local button = script.Parent 
+	local gui = button.Parent.Parent 
 	
 	button.MouseButton1Click:Connect(function()
 		gui:Destroy()
